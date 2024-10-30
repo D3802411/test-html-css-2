@@ -1,0 +1,390 @@
+/* blog */
+
+/* root -command that changes on all the site and not only in a block. I will use each property as a variable later  */
+:root {
+    --main-bg-color-white: white;
+    --main-bg-color-black: black;
+    --main-bg-color-grey: white;
+    --main-bg-color-grey300: rgb(202, 198, 198);
+    --main-bg-color-grey700: rgb(99, 97, 97);
+}
+
+/* you can find fonts on google fonts */
+
+body { 
+    font-family: "Montserrat", "arial", "verdana" !important ;
+    background-color: var(--main-bg-color-grey300) ;
+}
+
+
+.full_container {
+    width: 100%;
+    height: 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto; 
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.title-header { 
+    height: 50px;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 20px;
+}
+
+.title-header h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px; 
+}
+
+p span {
+    background-color: var(--main-bg-color-black, black);
+    color: var(--main-bg-color-white, white);
+    padding: 5px;
+}
+
+
+/* images */
+.image-header {
+    background-image: url(images/jane.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 25px;
+    }
+
+.image-header span:nth-child(1) {
+    font-size : 25px;
+    font-weight: 200;
+    color: var(--main-bg-color-white, white);
+    margin-bottom: 20px; 
+}
+
+.image-header span:nth-child(2) {
+    font-size : 25px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: var(--main-bg-color-white, white);
+    margin-bottom: 20px; 
+}
+
+/* button */ 
+.btn-subscribe {
+    width: 100px ;
+    height: 20px ;
+    padding: 20 ;
+    cursor: pointer;
+    font-size: 15px ;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: var(--main-bg-color-grey300, black);
+    color: var(--main-bg-color-black, black);
+}
+
+.btn-subscribe:hover {
+    background-color: var(--main-bg-color-white, white );
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 95% ;
+    background-color: var(--main-bg-color-grey300: rgb(202, 198, 198));
+
+}
+
+.posts {
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px; 
+    width: 75%;
+}
+
+.post1 {
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+    background-color: var(--main-bg-color-white, white);
+    color: var(--main-bg-color-black, black);
+}
+
+.post1 h2 { 
+    margin-top: 15px ;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.post1 h3 { 
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.title-descrptions {
+    font-weight: bold;
+}
+
+.image-post1 {
+    display: flex; 
+    justify-content: center;
+    padding: 10px; 
+}
+
+.post1 p { 
+    font-size: 15px;
+    font-weight: 100;
+    text-align: justify;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.buttons {
+    width: 100% ;
+    height: 20px ;
+    cursor: pointer;
+    font-size: 15px ;
+    text-align: center;
+    text-size-adjust: 10px ;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.like-button {
+    background-color: var(--main-bg-color-white, white);
+    color: var(--main-bg-color-black, black);
+    margin-left: 15px;
+
+  }
+
+.replies-button {
+    background-color: var(--main-bg-color-black, black);
+    color: var(--main-bg-color-white, white);
+    margin-right: 15px;
+}
+
+.line-space {
+    height: 1px;
+    color: var(--main-bg-color-grey300);
+    margin-bottom: 15px;
+}
+
+
+.comment {
+    display: flex; 
+    margin-bottom: 20px ;
+}
+
+.comment-img {
+    margin-left: 15px ;
+    margin-bottom: 15px ;
+}
+
+.comment-title {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.span-comment-title {
+        font-weight: bold;
+        margin: 10px;
+}
+
+.comment-p {
+    font-size: 15px;
+    font-weight: 70;
+}
+
+
+.blocks {
+    display: flex; 
+    justify-content: top;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 25%;
+}   
+
+.block1 {
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--main-bg-color-white);
+    color: var(--main-bg-color-black, black);
+}
+
+.block1-img {
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+}
+
+.block1-text {
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    height: 70px; 
+    background-color: var(--main-bg-color-black);
+    padding: 5px; 
+}
+
+.block1-title {
+    font-weight: bold; 
+    color: var(--main-bg-color-white);
+    margin-bottom: 10px;
+}
+.block1-p {
+    font-size: smaller;
+    text-align: left;
+    color: var(--main-bg-color-white);
+}
+
+.block2 {
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: var(--main-bg-color-white);
+    color: var(--main-bg-color-black, black);
+}
+
+.block2-title {
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    height: 50px; 
+    background-color: var(--main-bg-color-black);
+    padding: 5px; 
+    font-weight: bold; 
+    color: var(--main-bg-color-white);
+}
+
+.block2-square1 {
+    display: flex; 
+    margin-top: 15px;
+    height: 50px; 
+    margin-bottom: 10px;
+}
+
+.block2-img {
+    margin-top: 10x;
+    margin-left: 10px ;
+    margin-bottom: 10px ;
+}
+
+.block2-text1 {
+    font-size: 15px;
+    font-weight: 100;
+    padding: 5px;
+}
+
+.block2-h {
+        font-weight: bold;
+}
+
+.block2-p {
+    font-size: 15px;
+    font-weight: 70;
+}
+
+.block3 {
+    margin-top: 20px;
+}
+
+.shape-container {
+    padding: 50px;
+    background-color: var(--main-bg-color-white);
+}
+
+.empty-shape {
+    background-color: var(--main-bg-color-grey300);
+    text-align: center;
+    padding: 25px;
+    }
+
+
+
+
+.footer {
+    height: 250;
+}
+
+/* block color */
+.bg-black {background-color: var(--main-bg-color-black, black);}
+.bg-white {background-color: var(--main-bg-color-white, black);}
+.bg-grey {background-color: var(--main-bg-color-grey300, black );}
+.bg-white {background-color: var(--main-bg-color-grey700,black );}
+
+.text-black {color: var(--main-bg-color-black, black);}
+.text-white {color: var(--main-bg-color-white, black);}
+.text-grey300 {color: var(--main-bg-color-grey300, black);}
+.text-grey700 {color: var(--main-bg-color-grey700, black);}
+
+
+/* block margins, paddings... */
+.m-1 {margin: 1px;}
+.m-2 {margin: 1px;}
+.m-3 {margin: 1px;}
+.m-4 {margin: 1px;}
+.m-5 {margin: 1px;}
+
+.p-1 {padding: 1px;}
+.p-2 {padding: 1px;}
+.p-3 {padding: 1px;}
+.p-4 {padding: 1px;}
+.p-5 {padding: 1px;}
+
+
+/* style icons */
+.icon-button {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: inline-block; 
+    line-height: 30px;
+ }
+
+ .icon-button i {
+    color : var(--main-bg-color-white, black);
+ }
+
+ .icon-button:hover {
+    background-color : blue;
+ }
+
+.search-social a {
+    text-decoration: none;
+}
+
+
+
+

@@ -9,6 +9,28 @@
     --main-bg-color-grey700: rgb(99, 97, 97);
 }
 
+/* style icons */
+.icon-button {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: inline-block; 
+    line-height: 30px;
+ }
+
+ .icon-button i {
+    color : var(--main-bg-color-white, black);
+ }
+
+ .icon-button:hover {
+    background-color : blue;
+ }
+
+.search-social a {
+    text-decoration: none;
+}
+
+
 /* you can find fonts on google fonts */
 
 body { 
@@ -110,7 +132,7 @@ p span {
     margin: 0 auto;
     margin-top: 30px;
     width: 95% ;
-    background-color: var(--main-bg-color-grey300: rgb(202, 198, 198));
+    background-color: var(--main-bg-color-grey300, rgb(202, 198, 198));
 
 }
 
@@ -126,7 +148,6 @@ p span {
     display: flex; 
     justify-content: center;
     flex-direction: column;
-    margin-top: 15px;
     background-color: var(--main-bg-color-white, white);
     color: var(--main-bg-color-black, black);
 }
@@ -193,6 +214,7 @@ p span {
 
 .line-space {
     height: 1px;
+    width: 100%;
     color: var(--main-bg-color-grey300);
     margin-bottom: 15px;
 }
@@ -228,8 +250,7 @@ p span {
     display: flex; 
     justify-content: top;
     flex-direction: column;
-    margin-top: 15px;
-    margin-left: 15px;
+    padding: 15px; 
     width: 25%;
 }   
 
@@ -321,21 +342,55 @@ p span {
 }
 
 .shape-container {
-    padding: 50px;
+    padding: 20px;
     background-color: var(--main-bg-color-white);
 }
 
 .empty-shape {
     background-color: var(--main-bg-color-grey300);
     text-align: center;
-    padding: 25px;
-    }
+    padding: 80px;
+  }
+
+.btn-container {
+    padding: 10px; 
+    background-color: var(--main-bg-color-white);
+
+}
 
 
+.tag-button1 {
+    cursor: pointer;
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+}
 
+.tag-button2 {
+    cursor: pointer;
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+
+.inspiration-img1 {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-evenly;
+    margin: 8px;
+}
+.inspiration-img2 {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-evenly;
+    margin: 8px;
+}
 
 .footer {
     height: 250;
+    width: 75% ;
 }
 
 /* block color */
@@ -364,26 +419,6 @@ p span {
 .p-5 {padding: 1px;}
 
 
-/* style icons */
-.icon-button {
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    display: inline-block; 
-    line-height: 30px;
- }
-
- .icon-button i {
-    color : var(--main-bg-color-white, black);
- }
-
- .icon-button:hover {
-    background-color : blue;
- }
-
-.search-social a {
-    text-decoration: none;
-}
 
 
 

@@ -355,7 +355,6 @@ p span {
 .btn-container {
     padding: 10px; 
     background-color: var(--main-bg-color-white);
-
 }
 
 
@@ -371,7 +370,6 @@ p span {
     margin: 8px;
     display: flex;
     justify-content: center;
-    align-items: stretch;
 }
 
 
@@ -379,13 +377,14 @@ p span {
     display: flex; 
     flex-direction: row; 
     justify-content: space-evenly;
-    margin: 8px;
+    gap: 8px;
+
 }
 .inspiration-img2 {
     display: flex; 
     flex-direction: row; 
     justify-content: space-evenly;
-    margin: 8px;
+    gap: 8px;
 }
 
 .footer {
